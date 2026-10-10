@@ -4,17 +4,19 @@ Steam Deck の画面を操作して、起動メニューを設定する手順で
 
 対象は **SteamOS と Windows をすでに使える Steam Deck** です。Ice Circuit は Windows をインストールするツールではありません。現在の実機確認は LCD 版・SteamOS 3.8.16・Windows 10 で行っています。[検証記録](VALIDATION.md)
 
+現在の配布版は **0.1.0-alpha.7** です。alpha.6 と同じインストーラ・テーマを使い、導入案内と検証記録を更新しています。
+
 ## 1. デスクトップモードにする
 
 SteamOS の **STEAM ボタン → 電源 → デスクトップに切り替え** を選びます。Steam を起動したままなら、**STEAM＋X** で画面キーボードを開けます。操作しづらい場合はキーボードやマウスを接続しても構いません。[Valve のデスクトップ案内](https://help.steampowered.com/en/faqs/view/671A-4453-E8D2-323C)
 
 ## 2. 導入用の ZIP をダウンロードする
 
-Deck のブラウザーで [Ice Circuit のリリースページ](https://github.com/cobo920/steamdeck-ice-circuit/releases/tag/v0.1.0-alpha.6)を開きます。
+Deck のブラウザーで [Ice Circuit のリリースページ](https://github.com/cobo920/steamdeck-ice-circuit/releases/tag/v0.1.0-alpha.7)を開きます。
 
-**Pre-release** と表示された `v0.1.0-alpha.6` の **Assets** を開き、次のファイルを選んでください。
+**Pre-release** と表示された `v0.1.0-alpha.7` の **Assets** を開き、次のファイルを選んでください。
 
-**`Ice-Circuit-SteamDeck-0.1.0-alpha.6.zip`**
+**`Ice-Circuit-SteamDeck-0.1.0-alpha.7.zip`**
 
 `Source code (zip)` / `Source code (tar.gz)` や、リポジトリの `Code → Download ZIP` は選びません。リリース一覧から探す場合も、上記の名前を確認してください。
 

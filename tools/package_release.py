@@ -24,7 +24,7 @@ import tempfile
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_VERSION = "0.1.0-alpha.6"
+DEFAULT_VERSION = "0.1.0-alpha.7"
 ROOT_FILES = {"README.md", "START-HERE.html", "LICENSE", "NOTICE", ".gitignore"}
 LAUNCHERS = {"ice-circuit.py", "Install Ice Circuit.desktop"}
 WORKFLOW_FILES = {".github/workflows/test.yml", ".github/workflows/release.yml"}
@@ -245,7 +245,7 @@ def atomic_write(path, data):
 
 def package(root, version):
     if len(version) > 64 or not re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+(?:-[A-Za-z0-9][A-Za-z0-9.-]*)?", version):
-        raise PackageError("Version must be a simple semantic version, for example 0.1.0-alpha.6")
+        raise PackageError("Version must be a simple semantic version, for example 0.1.0-alpha.7")
     files = collect_sources(root)
     validate_sources(files)
     release = "ice-circuit-" + version

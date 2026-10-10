@@ -6,11 +6,13 @@ Steam Deck の電源を入れたときに、SteamOS と Windows を選べる回�
 
 *デザインプレビューです。実際の画面とは文字や余白が多少異なります。*
 
-**0.1.0-alpha.6 は開発中の検証版です。** 実機確認済みの環境は Steam Deck LCD・SteamOS 3.8.16・Windows 10。[確認できたことと未検証の範囲](docs/VALIDATION.md)を公開しています。
+**0.1.0-alpha.7 は開発中の検証版です。** 実機確認済みの環境は Steam Deck LCD・SteamOS 3.8.16・Windows 10。[確認できたことと未検証の範囲](docs/VALIDATION.md)を公開しています。
+
+alpha.7 は、alpha.6 と同じインストーラ・テーマに、導入案内と実機検証の記録を更新した版です。
 
 ## ダウンロードして使う
 
-**[GitHub Releases を開く](https://github.com/cobo920/steamdeck-ice-circuit/releases/tag/v0.1.0-alpha.6)** → **Assets** にある **`Ice-Circuit-SteamDeck-0.1.0-alpha.6.zip`** を選んでください。`Source code` は通常の導入用ではありません。
+**[GitHub Releases を開く](https://github.com/cobo920/steamdeck-ice-circuit/releases/tag/v0.1.0-alpha.7)** → **Assets** にある **`Ice-Circuit-SteamDeck-0.1.0-alpha.7.zip`** を選んでください。`Source code` は通常の導入用ではありません。
 
 1. Steam Deck をデスクトップモードにして、ZIP をダウンロードします。
 2. ファイル管理アプリ **Dolphin** で ZIP を展開します。
