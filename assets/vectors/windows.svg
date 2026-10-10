@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><title>Generic computer monitor</title><g fill="none" stroke="#a2bfd5" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+ <rect x="9" y="13" width="54" height="36" rx="3" fill="#101c27"/>
+ <path d="M9 43H63M36 49V59M24 60H48"/>
+ <path d="M23 24L29 29L23 34M35 34H46" stroke="#91b4ca" stroke-width="2.3"/>
+ </g></svg>

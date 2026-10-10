@@ -1,0 +1,23 @@
+Ice Circuit
+Copyright (C) 2026 Ice Circuit contributors
+
+Except for separately identified font software, the original source code,
+documentation, SVG artwork and generated artwork in this project are offered
+under the GNU General Public License, version 3 or (at your option) any later
+version. See LICENSE. Contributions were developed with AI assistance.
+
+DejaVu-derived fonts are separately licensed. Their applicable upstream
+notices and provenance are included in licenses/DejaVu-Fonts-LICENSE.txt and
+licenses/FONT-PROVENANCE.txt. The installed theme also carries the font notice.
+
+No Valve or Microsoft logo artwork, operating system images, GRUB executable
+binaries, device backups, private keys or device-specific configuration files
+are part of this distribution. The installer uses the system's existing GRUB.
+
+Steam, SteamOS and Steam Deck are trademarks of Valve Corporation. Microsoft
+and Windows are trademarks of the Microsoft group of companies. Product names
+describe compatibility. This is an independent project and is not sponsored,
+endorsed or provided by Valve or Microsoft.
+
+User-selected replacement images retain their own terms. This license grants
+no rights to third-party trademarks or to replacement images supplied by users.

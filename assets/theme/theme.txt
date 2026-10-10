@@ -1,0 +1,64 @@
+# Ice Circuit: native GRUB theme for 1280x800.
+# All resource paths are relative. Load the supplied PF2 fonts first.
+title-text: ""
+desktop-image: "background.png"
+desktop-image-scale-method: "stretch"
+desktop-color: "#080b10"
+terminal-font: "Ice Circuit Mono Regular 18"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
++ boot_menu {
+  left = 450
+  top = 238
+  width = 782
+  height = 360
+  item_font = "Ice Circuit Sans Regular 32"
+  selected_item_font = "Ice Circuit Sans Regular 32"
+  item_color = "#b6c7d5"
+  selected_item_color = "#f0f7ff"
+  icon_width = 72
+  icon_height = 72
+  item_height = 84
+  item_padding = 0
+  item_icon_space = 30
+  item_spacing = 38
+  item_pixmap_style = "item_*.png"
+  selected_item_pixmap_style = "select_*.png"
+  scrollbar = true
+  scrollbar_frame = "scroll_*.png"
+  scrollbar_thumb = "thumb_*.png"
+  scrollbar_thumb_overlay = true
+  scrollbar_slice = "center"
+  scrollbar_width = 6
+  scrollbar_left_pad = 12
+  scrollbar_right_pad = 0
+  scrollbar_top_pad = 14
+  scrollbar_bottom_pad = 14
+}
+
++ label {
+  id = "__timeout__"
+  left = 48
+  top = 700
+  width = 480
+  height = 26
+  font = "Ice Circuit Mono Regular 18"
+  color = "#c0dff2"
+  text = "AUTOMATIC BOOT IN %ds"
+}
+
++ progress_bar {
+  id = "__timeout__"
+  left = 48
+  top = 738
+  width = 264
+  height = 3
+  bar_style = "progress_track_*.png"
+  highlight_style = "progress_fill_*.png"
+  highlight_overlay = true
+  text = ""
+}

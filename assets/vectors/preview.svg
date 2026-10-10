@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" xml:space="preserve">
+  <title>Ice Circuit background artwork</title>
+  <desc>Original abstract circuit artwork with plain device text and no operating system logos.</desc>
+  <defs>
+    <linearGradient id="aBg" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#0b1019" />
+      <stop offset=".52" stop-color="#080b10" />
+      <stop offset="1" stop-color="#0e1823" />
+    </linearGradient>
+    <linearGradient id="neon">
+      <stop stop-color="#c4e4f7" />
+      <stop offset=".58" stop-color="#a2c8e0" />
+      <stop offset="1" stop-color="#7b9eb7" />
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#4d7087" stop-opacity=".16" />
+      <stop offset="1" stop-color="#101923" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="gridA" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#577183" stroke-width=".6" opacity=".035" />
+    </pattern>
+  </defs>
+  <g id="background">
+    <rect width="1280" height="800" fill="url(#aBg)" />
+    <rect width="1280" height="800" fill="url(#gridA)" />
+    <ellipse cx="270" cy="406" rx="440" ry="390" fill="url(#halo)" />
+  </g>
+  <g id="header">
+    <line x1="48" y1="76" x2="1232" y2="76" stroke="#375061" stroke-width="1" opacity="0.45" />
+    <text x="48" y="49" fill="#a9bdcc" font-family="DejaVu Sans Mono" font-size="17" font-weight="500" letter-spacing="2">STEAM DECK</text>
+    <text x="1232" y="49" fill="#8197a8" font-family="DejaVu Sans Mono" font-size="14" font-weight="400" letter-spacing="1" text-anchor="end">DUAL BOOT</text>
+  </g>
+  <g id="menu-heading">
+    <text x="450" y="163" fill="#e4edf6" font-family="DejaVu Sans" font-size="39" font-weight="500" letter-spacing="1">SELECT SYSTEM</text>
+    <text x="450" y="198" fill="#889eaf" font-family="DejaVu Sans" font-size="18" font-weight="400" letter-spacing="0">One device. Your choice.</text>
+  </g>
+  <g id="circuit">
+    <polyline points="48,254 108,254 153,299 201,299" fill="none" stroke="#8ab0c8" stroke-width="1.5" opacity=".55" />
+    <circle cx="201" cy="299" r="3" fill="#8ab0c8" />
+    <polyline points="48,337 115,337 140,362 194,362" fill="none" stroke="#496171" stroke-width="1.5" opacity=".55" />
+    <circle cx="194" cy="362" r="3" fill="#496171" />
+    <polyline points="48,461 105,461 154,412 202,412" fill="none" stroke="#405565" stroke-width="1.5" opacity=".55" />
+    <circle cx="202" cy="412" r="3" fill="#405565" />
+    <polyline points="48,561 91,561 151,501 214,501" fill="none" stroke="#7697ad" stroke-width="1.5" opacity=".55" />
+    <circle cx="214" cy="501" r="3" fill="#7697ad" />
+    <polyline points="300,286 335,251 368,251 399,220" fill="none" stroke="#68879c" stroke-width="1.5" opacity=".55" />
+    <circle cx="399" cy="220" r="3" fill="#68879c" />
+    <polyline points="301,481 343,523 378,523 399,544" fill="none" stroke="#83a5bb" stroke-width="1.5" opacity=".55" />
+    <circle cx="399" cy="544" r="3" fill="#83a5bb" />
+    <g transform="translate(251 398)">
+      <circle r="134" fill="none" stroke="#283c4b" stroke-width="1" />
+      <circle r="123" fill="none" stroke="#4c697e" stroke-dasharray="2 13" stroke-width="3" />
+      <circle r="108" fill="none" stroke="#a4cadf" stroke-width="1" stroke-dasharray="225 175" transform="rotate(-63)" opacity=".7" />
+      <circle r="96" fill="#0b121a" stroke="#344a5b" />
+      <path d="M-59 -77H59L77 -59V59L59 77H-59L-77 59V-59Z" fill="#101c27" stroke="url(#neon)" stroke-width="1.7" />
+      <rect x="-54" y="-54" width="108" height="108" rx="15" fill="#111c27" stroke="#3b5264" />
+      <path d="M-26 -20H-11L8 0L-11 20H-26M26 -20H11L-8 0L11 20H26" fill="none" stroke="url(#neon)" stroke-width="4" stroke-linejoin="round" />
+      <path d="M-34 34H34" stroke="#8aabc1" stroke-opacity=".5" />
+    </g>
+    <line x1="170" y1="359" x2="159" y2="359" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="333" y1="359" x2="344" y2="359" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="170" y1="372" x2="159" y2="372" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="333" y1="372" x2="344" y2="372" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="170" y1="385" x2="159" y2="385" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="333" y1="385" x2="344" y2="385" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="170" y1="398" x2="159" y2="398" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="333" y1="398" x2="344" y2="398" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="170" y1="411" x2="159" y2="411" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="333" y1="411" x2="344" y2="411" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="170" y1="424" x2="159" y2="424" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="333" y1="424" x2="344" y2="424" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="170" y1="437" x2="159" y2="437" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+    <line x1="333" y1="437" x2="344" y2="437" stroke="#6b879a" stroke-width="2" opacity="0.7" />
+  </g>
+  <g id="slogan">
+    <text x="251" y="582" fill="#9cafbd" font-family="DejaVu Sans Mono" font-size="20" font-weight="500" letter-spacing="1.5" text-anchor="middle">BUILT TO PLAY.</text>
+    <text x="251" y="609" fill="#9cafbd" font-family="DejaVu Sans Mono" font-size="20" font-weight="500" letter-spacing="1.5" text-anchor="middle">FREE TO EXPLORE.</text>
+  </g>
+  <g id="footer">
+    <line x1="48" y1="677" x2="1232" y2="677" stroke="#2a3744" opacity=".65" />
+    <text x="696" y="731" fill="#8fa5b6" font-family="DejaVu Sans Mono" font-size="16" letter-spacing=".6" xml:space="preserve">↑ ↓   SELECT     ENTER   BOOT     ESC   BACK</text>
+  </g>
+<g transform="translate(450 238)"><defs><linearGradient id="panelFill"><stop stop-color="#173248" />
+      <stop offset=".8" stop-color="#142331" /><stop offset="1" stop-color="#101a25" />
+      </linearGradient></defs>
+      <path d="M13 .5H781.5V98.5L768.5 111.5H.5V13.5Z" fill="url(#panelFill)" stroke="#527a95" />
+      <path d="M1.5 21V91" stroke="#b4e5ff" stroke-width="3" />
+      <path d="M674 1.5H768L780.5 14" fill="none" stroke="#86aec7" stroke-width="2" />
+      <path d="M751 48L759 56L751 64" fill="none" stroke="#c5eaff" stroke-width="2" /></g><g transform="translate(486 258)"><title>Generic gamepad</title><g fill="none" stroke="#def2ff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M23 22H49C56 22 60 28 62 36L65 49C67 59 59 63 53 55L47 48H25L19 55C13 63 5 59 7 49L10 36C12 28 16 22 23 22Z" fill="#172c3c" />
+ <path d="M23 30V42M17 36H29" stroke-width="3.5" />
+ <circle cx="48" cy="32" r="2.5" fill="#def2ff" stroke="none" />
+ <circle cx="55" cy="39" r="2.5" fill="#def2ff" stroke="none" />
+ <path d="M33 30H39" stroke="#91b4ca" stroke-width="2" />
+ </g></g><text x="588" y="306" font-family="DejaVu Sans" font-size="32" fill="#f0f7ff">SteamOS</text><g transform="translate(450 360)"><path d="M13 .5H781.5V98.5L768.5 111.5H.5V13.5Z" fill="#0d151e" fill-opacity=".94" stroke="#243441" />
+      <path d="M1 28V84" stroke="#4c697d" stroke-width="2" opacity=".7" /></g><g transform="translate(486 380)"><title>Generic computer monitor</title><g fill="none" stroke="#a2bfd5" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+ <rect x="9" y="13" width="54" height="36" rx="3" fill="#101c27" />
+ <path d="M9 43H63M36 49V59M24 60H48" />
+ <path d="M23 24L29 29L23 34M35 34H46" stroke="#91b4ca" stroke-width="2.3" />
+ </g></g><text x="588" y="428" font-family="DejaVu Sans" font-size="32" fill="#b6c7d5">Windows 11</text><g transform="translate(450 482)"><path d="M13 .5H781.5V98.5L768.5 111.5H.5V13.5Z" fill="#0d151e" fill-opacity=".94" stroke="#243441" />
+      <path d="M1 28V84" stroke="#4c697d" stroke-width="2" opacity=".7" /></g><g transform="translate(486 502)"><g transform="translate(36 36)" fill="none" stroke="#637888" stroke-width="3"><circle r="11" /><circle r="4" /><path d="M0 -11V-17" transform="rotate(0)" /><path d="M0 -11V-17" transform="rotate(45)" /><path d="M0 -11V-17" transform="rotate(90)" /><path d="M0 -11V-17" transform="rotate(135)" /><path d="M0 -11V-17" transform="rotate(180)" /><path d="M0 -11V-17" transform="rotate(225)" /><path d="M0 -11V-17" transform="rotate(270)" /><path d="M0 -11V-17" transform="rotate(315)" /></g></g><text x="588" y="550" font-family="DejaVu Sans" font-size="32" fill="#b6c7d5">Tools &amp; Recovery</text><g><text x="48" y="718" fill="#c0dff2" font-family="DejaVu Sans Mono" font-size="18">AUTOMATIC BOOT IN 5s</text><rect x="48" y="738" width="264" height="3" fill="#293947" /></g></svg>

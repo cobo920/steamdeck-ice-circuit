@@ -1,0 +1,327 @@
+{
+  "build_inputs": {
+    "background_source_sha256": "36d5adb7d4178cda5cc271473d8f0a877df4687ee71b51189995f3dac01adf25",
+    "build_script_sha256": "526371868d32256a9132c1aab51a12003a733051e19e3f84a5bf7e00b206d008",
+    "font_license_sha256": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+    "font_sha256": {
+      "DejaVuSans.ttf": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+      "DejaVuSansMono.ttf": "c805f9436dbc268644c1d9584f01a601a653e028e08fd74b9b949f6cf8304d88"
+    }
+  },
+  "files": {
+    "theme/FONT-LICENSE.txt": {
+      "sha256": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+      "size": 8816
+    },
+    "theme/background-tools.png": {
+      "sha256": "d36ea487850af9dfb3aef8171255d63f93c416e4cd3152ce015d61498f32b105",
+      "size": 116339
+    },
+    "theme/background.png": {
+      "sha256": "d83bfda6b1e4fc8d68f927eec3dd484b26e9941f63ea4bb8212f0a0a0537f8f0",
+      "size": 141862
+    },
+    "theme/boot-background.png": {
+      "sha256": "6bf969eeeb67b3f25afc7c51eb7e80c48b5298b01e7bbd4c2a2f11da5806c029",
+      "size": 109502
+    },
+    "theme/icons/efi.png": {
+      "sha256": "67289298f1317a09638e85bca8331647d5834e453c9742917522ef527c1069cc",
+      "size": 785
+    },
+    "theme/icons/gnu-linux.png": {
+      "sha256": "8b9e5b7b48d292653b4860b62f58d31c68985b997cfc1eb51e793da2d55bc1bc",
+      "size": 1619
+    },
+    "theme/icons/halt.png": {
+      "sha256": "6b70f2468be58c566bbd3a80209909e0d076ee8b597c420b8fc4421545fdcb26",
+      "size": 1468
+    },
+    "theme/icons/linux.png": {
+      "sha256": "8b9e5b7b48d292653b4860b62f58d31c68985b997cfc1eb51e793da2d55bc1bc",
+      "size": 1619
+    },
+    "theme/icons/reboot.png": {
+      "sha256": "221794395a29815ddc635a200f37467cf10b0e7aa286162bf54e992e8a73d756",
+      "size": 1639
+    },
+    "theme/icons/recovery.png": {
+      "sha256": "8b9e5b7b48d292653b4860b62f58d31c68985b997cfc1eb51e793da2d55bc1bc",
+      "size": 1619
+    },
+    "theme/icons/restart.png": {
+      "sha256": "221794395a29815ddc635a200f37467cf10b0e7aa286162bf54e992e8a73d756",
+      "size": 1639
+    },
+    "theme/icons/settings.png": {
+      "sha256": "cff980f4fb5aec0ecc53caf6abdd4fce3ab4538f06ec10278877f3c9dec179e6",
+      "size": 1646
+    },
+    "theme/icons/shutdown.png": {
+      "sha256": "6b70f2468be58c566bbd3a80209909e0d076ee8b597c420b8fc4421545fdcb26",
+      "size": 1468
+    },
+    "theme/icons/steamos.png": {
+      "sha256": "931230a9eea50aba4b0e37b161bf5cda6cb081eb876fb207d5712f596c3570ef",
+      "size": 2294
+    },
+    "theme/icons/tools.png": {
+      "sha256": "cff980f4fb5aec0ecc53caf6abdd4fce3ab4538f06ec10278877f3c9dec179e6",
+      "size": 1646
+    },
+    "theme/icons/uefi.png": {
+      "sha256": "67289298f1317a09638e85bca8331647d5834e453c9742917522ef527c1069cc",
+      "size": 785
+    },
+    "theme/icons/windows.png": {
+      "sha256": "b73cee388102e51cd297e365d2e69d398ae490ec9910d98f8fbdc331d5b8d275",
+      "size": 1092
+    },
+    "theme/item_c.png": {
+      "sha256": "1b806f8bbc0ef0391dbfdc6918e48bc3ee0b5f0556197b49f928f7f0f5e2116d",
+      "size": 520
+    },
+    "theme/item_e.png": {
+      "sha256": "7b5034541951dd8429c8c4923a418e5b2b310eb28e4a01146f7ae6a019dd0f27",
+      "size": 187
+    },
+    "theme/item_n.png": {
+      "sha256": "9e88e4c1991f45dbfc2f084f098e89450445c60c2819ec876ddb8be5c5ab28a8",
+      "size": 187
+    },
+    "theme/item_ne.png": {
+      "sha256": "9ddb913873250dde7e1b9df291e61229712c6a1df72b478357786cdedde0cb33",
+      "size": 134
+    },
+    "theme/item_nw.png": {
+      "sha256": "3910a9d695c5639b354b2572a7fd8a6534918f7db1f6023241e23828e605a9e9",
+      "size": 356
+    },
+    "theme/item_s.png": {
+      "sha256": "4bb40b2e67e1bcd2bb9eb04a47bbf7b5c3193a558ee31bf75ffe5a18beefecc0",
+      "size": 187
+    },
+    "theme/item_se.png": {
+      "sha256": "7105086b55ee3a6e72c6bd20c3a66eb9555f84ab7f28e29d6cb27c81d7dbaf98",
+      "size": 216
+    },
+    "theme/item_sw.png": {
+      "sha256": "44cd79cf9dcb168dafc4ab8b5482f9e1a972cf97187149faaf6a2fb737955abf",
+      "size": 138
+    },
+    "theme/item_w.png": {
+      "sha256": "8aeb2d147c38908068ee3b7eec6ea443c3b65147f22435de1b51412366f8ac67",
+      "size": 232
+    },
+    "theme/mono-18.pf2": {
+      "sha256": "50bc7ca7177937ce2a7e6db6de0873f832d3d594a8852f273a6fc4fdffe844bd",
+      "size": 6324
+    },
+    "theme/progress_fill_c.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_fill_e.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_fill_n.png": {
+      "sha256": "7ebdd85ebd520594e091c9062d897fe8f599de5012cac7686814a7678a7ba2e8",
+      "size": 95
+    },
+    "theme/progress_fill_ne.png": {
+      "sha256": "7ebdd85ebd520594e091c9062d897fe8f599de5012cac7686814a7678a7ba2e8",
+      "size": 95
+    },
+    "theme/progress_fill_nw.png": {
+      "sha256": "7ebdd85ebd520594e091c9062d897fe8f599de5012cac7686814a7678a7ba2e8",
+      "size": 95
+    },
+    "theme/progress_fill_s.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_fill_se.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_fill_sw.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_fill_w.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_track_c.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_track_e.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_track_n.png": {
+      "sha256": "9e86d3b990abb13223cf09fcc55547bed550ab9251d73bd96baf00778cad409f",
+      "size": 95
+    },
+    "theme/progress_track_ne.png": {
+      "sha256": "9e86d3b990abb13223cf09fcc55547bed550ab9251d73bd96baf00778cad409f",
+      "size": 95
+    },
+    "theme/progress_track_nw.png": {
+      "sha256": "9e86d3b990abb13223cf09fcc55547bed550ab9251d73bd96baf00778cad409f",
+      "size": 95
+    },
+    "theme/progress_track_s.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_track_se.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_track_sw.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/progress_track_w.png": {
+      "sha256": "443532f35eb477b9fef443bf63da3ce240333b34fcc187cac6e11ab8acf1151b",
+      "size": 86
+    },
+    "theme/sans-24.pf2": {
+      "sha256": "11a1836d2c1d26ee032451e2d673bdd3eb2e1ce649bcbddf993a6686cf0a0277",
+      "size": 8706
+    },
+    "theme/sans-32.pf2": {
+      "sha256": "c4b40f4c0315d14554619a5ad9ae6b6cdbdad48b094d9f84693c7c276ae13d15",
+      "size": 12349
+    },
+    "theme/scroll_c.png": {
+      "sha256": "fdd922c78855a84045ff97afc356cba12e18cb5d7ce4ba2b197b237597f91a28",
+      "size": 97
+    },
+    "theme/scroll_e.png": {
+      "sha256": "fdd922c78855a84045ff97afc356cba12e18cb5d7ce4ba2b197b237597f91a28",
+      "size": 97
+    },
+    "theme/scroll_n.png": {
+      "sha256": "fdd922c78855a84045ff97afc356cba12e18cb5d7ce4ba2b197b237597f91a28",
+      "size": 97
+    },
+    "theme/scroll_ne.png": {
+      "sha256": "fdd922c78855a84045ff97afc356cba12e18cb5d7ce4ba2b197b237597f91a28",
+      "size": 97
+    },
+    "theme/scroll_nw.png": {
+      "sha256": "fdd922c78855a84045ff97afc356cba12e18cb5d7ce4ba2b197b237597f91a28",
+      "size": 97
+    },
+    "theme/scroll_s.png": {
+      "sha256": "fdd922c78855a84045ff97afc356cba12e18cb5d7ce4ba2b197b237597f91a28",
+      "size": 97
+    },
+    "theme/scroll_se.png": {
+      "sha256": "fdd922c78855a84045ff97afc356cba12e18cb5d7ce4ba2b197b237597f91a28",
+      "size": 97
+    },
+    "theme/scroll_sw.png": {
+      "sha256": "fdd922c78855a84045ff97afc356cba12e18cb5d7ce4ba2b197b237597f91a28",
+      "size": 97
+    },
+    "theme/scroll_w.png": {
+      "sha256": "fdd922c78855a84045ff97afc356cba12e18cb5d7ce4ba2b197b237597f91a28",
+      "size": 97
+    },
+    "theme/select_c.png": {
+      "sha256": "aaedd8ad04ae6300ec6836668a898b29812e0791c1786772ee2ec4afba8bb657",
+      "size": 574
+    },
+    "theme/select_e.png": {
+      "sha256": "2264c6820ea81816677d491a589bfe616ee5ef9bfcfbc3ff0692531171ec9e80",
+      "size": 429
+    },
+    "theme/select_n.png": {
+      "sha256": "d9cd31ab9631e58ef5040ba1642bb2f202304969e34567a8721ce4a5c07c7767",
+      "size": 354
+    },
+    "theme/select_ne.png": {
+      "sha256": "0841feb5903de375661424e188aafb9ae156e2083f5f55434f48bca3cc628a20",
+      "size": 303
+    },
+    "theme/select_nw.png": {
+      "sha256": "537e349312a6bb2c41fee2e67a3ef1e6f2e1be1e7807dfda86728030f000c4fa",
+      "size": 394
+    },
+    "theme/select_s.png": {
+      "sha256": "3945ecc8ebbd2c15e41cbe7ac7982af8b6eef2ef0d4aeac5e3a9458d0c1a0922",
+      "size": 284
+    },
+    "theme/select_se.png": {
+      "sha256": "8e39870face5540461ee3b070f4172ab20df4696f788743c3e5b3b6c8d476465",
+      "size": 251
+    },
+    "theme/select_sw.png": {
+      "sha256": "6ea95668c81d98177320969570670a4e1d3222ca9740af6410d9ee1671d3e145",
+      "size": 125
+    },
+    "theme/select_w.png": {
+      "sha256": "adb68fb71e2c964570f699f509b27c22ffd7c0f6ff0cbd969f7ddd1591dfd5aa",
+      "size": 189
+    },
+    "theme/theme-tools.txt": {
+      "sha256": "c2db637894805f2663272f4893e7a5bd1fe37625802ab4d8fc5ad876a702570f",
+      "size": 1086
+    },
+    "theme/theme.txt": {
+      "sha256": "85269c016651409c0c603266fb429526e588fc0e237825422180787aeadb2d70",
+      "size": 1468
+    },
+    "theme/thumb_c.png": {
+      "sha256": "2a52970a05a6e5a380f60b582890b2dcccdc2e7245ea916376830187f9d39bed",
+      "size": 97
+    },
+    "theme/thumb_e.png": {
+      "sha256": "2a52970a05a6e5a380f60b582890b2dcccdc2e7245ea916376830187f9d39bed",
+      "size": 97
+    },
+    "theme/thumb_n.png": {
+      "sha256": "2a52970a05a6e5a380f60b582890b2dcccdc2e7245ea916376830187f9d39bed",
+      "size": 97
+    },
+    "theme/thumb_ne.png": {
+      "sha256": "2a52970a05a6e5a380f60b582890b2dcccdc2e7245ea916376830187f9d39bed",
+      "size": 97
+    },
+    "theme/thumb_nw.png": {
+      "sha256": "2a52970a05a6e5a380f60b582890b2dcccdc2e7245ea916376830187f9d39bed",
+      "size": 97
+    },
+    "theme/thumb_s.png": {
+      "sha256": "2a52970a05a6e5a380f60b582890b2dcccdc2e7245ea916376830187f9d39bed",
+      "size": 97
+    },
+    "theme/thumb_se.png": {
+      "sha256": "2a52970a05a6e5a380f60b582890b2dcccdc2e7245ea916376830187f9d39bed",
+      "size": 97
+    },
+    "theme/thumb_sw.png": {
+      "sha256": "2a52970a05a6e5a380f60b582890b2dcccdc2e7245ea916376830187f9d39bed",
+      "size": 97
+    },
+    "theme/thumb_w.png": {
+      "sha256": "2a52970a05a6e5a380f60b582890b2dcccdc2e7245ea916376830187f9d39bed",
+      "size": 97
+    }
+  },
+  "icon_size": [
+    72,
+    72
+  ],
+  "resolution": [
+    1280,
+    800
+  ],
+  "schema_version": 1,
+  "theme_directory": "theme"
+}

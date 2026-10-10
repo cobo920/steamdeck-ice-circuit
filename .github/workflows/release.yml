@@ -1,0 +1,112 @@
+name: Prepare draft prerelease
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Existing version tag without v (for example 0.1.0-alpha.6)
+        required: true
+        default: 0.1.0-alpha.6
+        type: string
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: draft-release-${{ github.event.inputs.version || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      tag: ${{ steps.version.outputs.tag }}
+      commit: ${{ steps.version.outputs.commit }}
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && format('v{0}', inputs.version) || github.ref }}
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.13'
+      - name: Validate the existing tag and release version
+        id: version
+        env:
+          REQUESTED_VERSION: ${{ github.event.inputs.version }}
+        run: |
+          python - <<'PY'
+          import os, re, runpy, subprocess
+          from pathlib import Path
+          version = os.environ['REQUESTED_VERSION'] or os.environ['GITHUB_REF_NAME'].removeprefix('v')
+          if not re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+(?:-[A-Za-z0-9][A-Za-z0-9.-]*)?', version):
+              raise SystemExit('Invalid version')
+          if version != runpy.run_path('tools/package_release.py')['DEFAULT_VERSION']:
+              raise SystemExit('Tag does not match the package version')
+          if f'Ice-Circuit-SteamDeck-{version}.zip' not in Path('docs/RELEASE-NOTES.md').read_text():
+              raise SystemExit('Update the release notes for this version first')
+          commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write(f'version={version}\ntag=v{version}\ncommit={commit}\n')
+          PY
+      - name: Install optional image test tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends --yes librsvg2-bin ffmpeg
+      - name: Run isolated tests
+        env:
+          PYTHONPATH: src
+        run: python -B -m unittest discover -s tests -v
+      - name: Build distribution
+        env:
+          RELEASE_VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          python -B tools/package_release.py --version "$RELEASE_VERSION"
+          (cd dist && sha256sum --check SHA256SUMS)
+          mkdir "$RUNNER_TEMP/release-files"
+          cp dist/* "$RUNNER_TEMP/release-files/"
+          cp docs/RELEASE-NOTES.md "$RUNNER_TEMP/release-files/release-notes.md"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: release-files
+          path: ${{ runner.temp }}/release-files/
+          if-no-files-found: error
+          retention-days: 14
+
+  draft:
+    needs: package
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: release-files
+          path: release-files
+      - name: Verify downloaded distribution
+        working-directory: release-files
+        run: sha256sum --check SHA256SUMS
+      - name: Create draft only (manual review is required to publish)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_VERSION: ${{ needs.package.outputs.version }}
+          RELEASE_TAG: ${{ needs.package.outputs.tag }}
+          RELEASE_COMMIT: ${{ needs.package.outputs.commit }}
+        run: |
+          if gh release view "$RELEASE_TAG" --repo "$GH_REPO" >/dev/null 2>&1; then
+            echo 'A release already exists for this tag; refusing to overwrite it.' >&2
+            exit 1
+          fi
+          gh release create "$RELEASE_TAG" \
+            "release-files/Ice-Circuit-SteamDeck-$RELEASE_VERSION.zip" \
+            "release-files/ice-circuit-$RELEASE_VERSION.tar.gz" \
+            "release-files/ice-circuit-$RELEASE_VERSION.manifest.json" \
+            release-files/SHA256SUMS \
+            --repo "$GH_REPO" --verify-tag --target "$RELEASE_COMMIT" \
+            --title "Ice Circuit $RELEASE_VERSION" \
+            --notes-file release-files/release-notes.md \
+            --draft --prerelease

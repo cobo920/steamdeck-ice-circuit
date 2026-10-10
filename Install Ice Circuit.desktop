@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Ice Circuit Setup
+Name[ja]=Ice Circuit セットアップ
+Comment=Set up your Steam Deck boot menu
+Comment[ja]=Steam Deck の起動メニューを設定します
+Exec=/usr/bin/python3 -I -c "import os,sys,urllib.parse; p=sys.argv[1]; p=urllib.parse.unquote(urllib.parse.urlsplit(p).path) if p.startswith('file:') else p; os.execv('/usr/bin/python3',['python3','-I',os.path.join(os.path.dirname(os.path.abspath(p)),'ice-circuit.py'),'gui'])" %k
+Icon=applications-games
+Terminal=false
+Categories=System;Settings;
+StartupNotify=true

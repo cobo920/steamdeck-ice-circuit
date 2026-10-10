@@ -1,0 +1,21 @@
+Ice Circuit artwork provenance
+
+The abstract circuit, panel frames, progress strips, generic gamepad, generic
+computer monitor, and utility symbols were drawn as SVG/code for this project
+with AI assistance. The editable background is assets/source/background.svg;
+the other shape definitions are in tools/build_theme.py. These original
+contributions are licensed under GPL-3.0-or-later; see the project LICENSE
+at the repository root.
+
+The default SteamOS entry uses a generic gamepad. The default Windows entry
+uses a generic computer monitor. No official Steam or Windows logo artwork is
+bundled, downloaded, discovered on a device, or imported by the build script.
+Product names in menu labels and plain text identify compatibility; this is an
+independent theme and does not imply endorsement by the product owners.
+
+Font software has separate terms: see DejaVu-Fonts-LICENSE.txt and
+FONT-PROVENANCE.txt. User-supplied replacement icons are not part of the
+project's original artwork and retain their own applicable terms.
+
+assets/preview.png is an illustrative rendering of the default menu, not a
+capture of a particular user's device or a promise about firmware rendering.
